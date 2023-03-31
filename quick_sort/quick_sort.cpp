@@ -7,7 +7,7 @@ int cmp_count = 0; // number of comparasion
 int mov_count = 0; // number of data movment
 int n;
 
-void main() {
+void input() {
 	while (true) 
 	{
 		cout << "Masukan panjang element array: ";
@@ -27,4 +27,13 @@ void main() {
 		cout << "<" << (i + 1) << ">";
 		cin >> arr[i];
 	}
+}
+//swap the elemet at index x with the element at index y
+void swap(int x, int y)
+{
+	int temp;
+
+	temp = arr[x];
+	arr[x] = arr[y];
+	arr[y] = temp;
 }
