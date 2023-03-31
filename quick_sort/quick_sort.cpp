@@ -18,6 +18,7 @@ void input() {
 		else
 			cout << "\nMasukan panjang array adalah 0" << endl;
 	}
+
 	cout << "\n-------------------" << endl;
 	cout << "\nEnter Array Element" << endl;
 	cout << "\n-------------------" << endl;
@@ -28,6 +29,7 @@ void input() {
 		cin >> arr[i];
 	}
 }
+
 //swap the elemet at index x with the element at index y
 void swap(int x, int y)
 {
@@ -63,7 +65,7 @@ void q_short(int low, int high)
 		}
 		cmp_count++;
 		//search for an element less then ofr equal to pivot
-		while ((arr[j] <= pivot) && (j >= low))//langkah 7
+		while ((arr[j] > pivot) && (j >= low))//langkah 7
 		{
 			j--;//langkah 8
 			cmp_count++;
